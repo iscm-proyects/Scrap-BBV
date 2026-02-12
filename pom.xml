@@ -131,6 +131,13 @@
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
                 <version>2.2.6</version>
+                <configuration>
+                    <backend>html</backend>
+                    <doctype>book</doctype>
+                    <attributes>
+                        <snippets>${project.build.directory}/generated-snippets</snippets>
+                    </attributes>
+                </configuration>
                 <executions>
                     <execution>
                         <id>generate-docs</id>
@@ -138,13 +145,6 @@
                         <goals>
                             <goal>process-asciidoc</goal>
                         </goals>
-                        <configuration>
-                            <backend>html</backend>
-                            <doctype>book</doctype>
-                            <attributes>
-                                <snippets>${project.build.directory}/generated-snippets</snippets>
-                            </attributes>
-                        </configuration>
                     </execution>
                 </executions>
                 <dependencies>

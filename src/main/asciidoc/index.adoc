@@ -6,6 +6,10 @@
 :toclevels: 3
 :sectlinks:
 
+ifndef::snippets[]
+:snippets: ../../../target/generated-snippets
+endif::[]
+
 == Introducción
 
 Esta es la documentación de la API para el proyecto de Scraping.
