@@ -1,0 +1,69 @@
+= Documentación de API Scrap
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+:sectlinks:
+
+== Introducción
+
+Esta es la documentación de la API para el proyecto de Scraping.
+
+== Scraper Controller
+
+=== Listar Emisores
+Obtiene la lista de emisores (La primera pantalla).
+
+include::{snippets}/listar-emisores/http-request.adoc[]
+include::{snippets}/listar-emisores/http-response.adoc[]
+include::{snippets}/listar-emisores/curl-request.adoc[]
+
+=== Procesar Detalles
+Descargar detalles y PDFs de todos los emisores guardados.
+
+include::{snippets}/procesar-detalles/http-request.adoc[]
+include::{snippets}/procesar-detalles/http-response.adoc[]
+include::{snippets}/procesar-detalles/response-fields.adoc[]
+
+=== Procesar Emisiones API
+
+include::{snippets}/procesar-emisiones-api/http-request.adoc[]
+include::{snippets}/procesar-emisiones-api/http-response.adoc[]
+include::{snippets}/procesar-emisiones-api/response-fields.adoc[]
+
+=== Listar Archivos BBV
+Lista los archivos descargados de BBV.
+
+include::{snippets}/archivos-bbv/http-request.adoc[]
+include::{snippets}/archivos-bbv/http-response.adoc[]
+include::{snippets}/archivos-bbv/response-fields.adoc[]
+
+=== Listar Archivos ASFI
+Lista los hechos relevantes de ASFI.
+
+include::{snippets}/archivos-asfi/http-request.adoc[]
+include::{snippets}/archivos-asfi/http-response.adoc[]
+include::{snippets}/archivos-asfi/response-fields.adoc[]
+
+=== Descargar Archivo
+Descarga un archivo físico dado su tabla e ID.
+
+include::{snippets}/descargar-archivo/http-request.adoc[]
+include::{snippets}/descargar-archivo/path-parameters.adoc[]
+include::{snippets}/descargar-archivo/http-response.adoc[]
+
+=== Scraping ASFI Hechos Relevantes
+Inicia el scraping de hechos relevantes de ASFI.
+
+include::{snippets}/asfi-hechos-relevantes/http-request.adoc[]
+include::{snippets}/asfi-hechos-relevantes/query-parameters.adoc[]
+include::{snippets}/asfi-hechos-relevantes/http-response.adoc[]
+
+=== Obtener Detalle Emisor
+Obtiene el detalle completo de un emisor y sus archivos.
+
+include::{snippets}/obtener-emisor-detalle/http-request.adoc[]
+include::{snippets}/obtener-emisor-detalle/path-parameters.adoc[]
+include::{snippets}/obtener-emisor-detalle/http-response.adoc[]
+include::{snippets}/obtener-emisor-detalle/response-fields.adoc[]
